@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h2 class="display-4">Sources</h2><br />
+    <ul>
+        @foreach (var source in ViewBag.Sources)
+        {
+            <li>
+                <a style="font-size:18pt" href="/Statistics/?source=@source">@source</a>
+            </li>
+        }
+    </ul>
+</div>
